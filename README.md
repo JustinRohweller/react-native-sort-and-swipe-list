@@ -17,3 +17,5 @@ Combines two packages:
 react-native-sortable-list: https://github.com/gitim/react-native-sortable-list
 react-native-swipe-list-view: https://github.com/jemise111/react-native-swipe-list-view/blob/master/docs/SwipeRow.md
 
+See example.js to see common usage (plus example add/remove rows)
+
