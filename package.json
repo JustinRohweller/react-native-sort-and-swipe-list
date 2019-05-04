@@ -1,6 +1,6 @@
 {
   "name": "@justinrohweller/react-native-sort-and-swipe-list",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "Renders a Sortable and Swipeable List in React Native",
   "license": "MIT",
   "repository": "JustinRohweller/react-native-sort-and-swipe-list",

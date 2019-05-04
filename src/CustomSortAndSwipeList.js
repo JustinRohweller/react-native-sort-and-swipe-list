@@ -110,6 +110,7 @@ class CustomSortAndSwipeList extends Component {
         renderHiddenRow={() => this.props.renderHiddenRow(index)}
         rowStyle={this.props.rowStyle}
         renderRow={this.props.renderRow}
+        animatedRowViewStyle={this.props.animatedRowViewStyle}
       />
     );
   };
@@ -188,8 +189,8 @@ CustomSortAndSwipeList.defaultProps = {
     alignItems: "center",
     backgroundColor: "#fff",
     height: 80,
-    width: window.width - 40 * 2,
-    borderRadius: 4,
+    // width: window.width - 40 * 2, don't add width it cuts edges.
+    borderRadius: 10,
 
     // raised
     shadowColor: "rgba(0,0,0,0.2)",
@@ -197,6 +198,14 @@ CustomSortAndSwipeList.defaultProps = {
     shadowOffset: { height: 2, width: 2 },
     shadowRadius: 2,
     elevation: 0
+  },
+
+  animatedRowViewStyle: {
+    height: 90 + 6,
+    width: window.width,
+    alignItems: "center",
+    justifyContent: "center",
+    alignSelf: "center"
   },
 
   onRowPress: () => {},

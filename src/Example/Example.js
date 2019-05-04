@@ -1,7 +1,8 @@
 // Example usage of CustomSortAndSwipeList
 import React, { Component } from "react";
 import { View, Text, Dimensions, TouchableOpacity, Image } from "react-native";
-import { CustomSortAndSwipeList } from "../CustomSortAndSwipeList";
+import CustomSortAndSwipeList from "@justinrohweller/react-native-sort-and-swipe-list";
+import NewRow from "../components/sort/NewRow";
 
 const data = [
   {
@@ -25,6 +26,10 @@ const data = [
 const window = Dimensions.get("window");
 
 class Example extends Component {
+  static navigationOptions = () => ({
+    header: null
+  });
+
   state = { data, order: Object.keys[data] };
 
   onDeletePress = async rowId => {
@@ -112,20 +117,6 @@ class Example extends Component {
       >
         <CustomSortAndSwipeList
           data={this.state.data}
-          swipeRowProps={{
-            leftOpenValue: 60,
-            rightOpenValue: -100,
-            style: {
-              flex: 1,
-              flexDirection: "column",
-              alignItems: "center",
-              justifyContent: "center",
-              height: 86, //can be 80 if you want no gaps between items.
-              width: window.width
-            }
-          }}
-          renderHiddenRow={this.renderHiddenRow}
-          renderRow={this.renderRow}
         />
       </View>
     );

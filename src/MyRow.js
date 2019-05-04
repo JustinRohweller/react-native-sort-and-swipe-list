@@ -134,7 +134,8 @@ class MyRow extends Component {
         swipeGestureBegan={this.props.swipeGestureBegan} //not allowed
       >
         {this.props.renderHiddenRow()}
-        <Animated.View style={[this.props.rowStyle, this.style]}>
+
+        <Animated.View style={[this.props.animatedRowViewStyle, this.style]}>
           <TouchableOpacity
             onLongPress={this.onSortPress}
             onPressOut={() => this.onReleaseRow()}
