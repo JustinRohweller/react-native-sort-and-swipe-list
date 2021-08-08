@@ -1,6 +1,6 @@
 # react-native-sort-and-swipe-list
 Renders a Sortable and Swipeable List in React Native
-Hopefully will update this readme soon.
+I recommend honestly not using this but using: https://github.com/computerjazz/react-native-draggable-flatlist#readme
 
 npm install --save @justinrohweller/react-native-sort-and-swipe-list
 
